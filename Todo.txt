@@ -1,0 +1,8 @@
+Todo:
+
+DomainName compression workaround.
+* Apparently compression offset pointer points to the original header data, so in this event,
+ we merge the header and payload buffers to retreive the same name that was set in the
+ original dns question. -iruiz
+
+

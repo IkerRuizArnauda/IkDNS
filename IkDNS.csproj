@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>IkDNS</RootNamespace>
+    <AssemblyName>IkDNS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIFileParser, Version=2.5.2.0, Culture=neutral, PublicKeyToken=79af7b307b65cf3c, processorArchitecture=MSIL">
+      <HintPath>packages\ini-parser.2.5.2\lib\net20\INIFileParser.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Enums.cs" />
+    <Compile Include="Core\Helpers\Extensions.cs" />
+    <Compile Include="Core\NonBlockingConsole.cs" />
+    <Compile Include="Core\Resources\Resource.cs" />
+    <Compile Include="Core\Readers\CustomReader.cs" />
+    <Compile Include="Core\Header.cs" />
+    <Compile Include="Core\Resources\Question.cs" />
+    <Compile Include="Core\Readers\PersistedReader.cs" />
+    <Compile Include="Core\Records\BaseRecord.cs" />
+    <Compile Include="Core\Records\RA.cs" />
+    <Compile Include="Core\Records\RAAAA.cs" />
+    <Compile Include="Core\Records\RAFSDB.cs" />
+    <Compile Include="Core\Records\RCNAME.cs" />
+    <Compile Include="Core\Records\RDNAME.cs" />
+    <Compile Include="Core\Records\RDS.cs" />
+    <Compile Include="Core\Records\RHINFO.cs" />
+    <Compile Include="Core\Records\RISDN.cs" />
+    <Compile Include="Core\Records\RKEY.cs" />
+    <Compile Include="Core\Records\RKX.cs" />
+    <Compile Include="Core\Records\RLOC.cs" />
+    <Compile Include="Core\Records\RMB.cs" />
+    <Compile Include="Core\Records\RMG.cs" />
+    <Compile Include="Core\Records\RMINFO.cs" />
+    <Compile Include="Core\Records\RMR.cs" />
+    <Compile Include="Core\Records\RMX.cs" />
+    <Compile Include="Core\Records\RNAPTR.cs" />
+    <Compile Include="Core\Records\RNS.cs" />
+    <Compile Include="Core\Records\RNSAP.cs" />
+    <Compile Include="Core\Records\RNULL.cs" />
+    <Compile Include="Core\Records\RPTR.cs" />
+    <Compile Include="Core\Records\RPX.cs" />
+    <Compile Include="Core\Records\RRP.cs" />
+    <Compile Include="Core\Records\RRT.cs" />
+    <Compile Include="Core\Records\RSIG.cs" />
+    <Compile Include="Core\Records\RSOA.cs" />
+    <Compile Include="Core\Records\RSRV.cs" />
+    <Compile Include="Core\Records\RTKEY.cs" />
+    <Compile Include="Core\Records\RTSIG.cs" />
+    <Compile Include="Core\Records\RTXT.cs" />
+    <Compile Include="Core\Records\RUnknown.cs" />
+    <Compile Include="Core\Records\RWKS.cs" />
+    <Compile Include="Core\Records\RX25.cs" />
+    <Compile Include="Core\Request.cs" />
+    <Compile Include="Core\Response.cs" />
+    <Compile Include="Core\Server.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Configuration.ini">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

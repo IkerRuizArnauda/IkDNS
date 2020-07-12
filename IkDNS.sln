@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IkDNS", "IkDNS.csproj", "{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D5C2D8E-CE6B-4C83-94EF-9EBFD4E270D1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {55257662-15A8-412C-B905-19297DCA6B97}
+	EndGlobalSection
+EndGlobal
