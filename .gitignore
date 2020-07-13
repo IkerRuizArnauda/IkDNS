@@ -1,0 +1,14 @@
+
+obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
+obj/Debug/IkDNS.csproj.CopyComplete
+obj/Debug/IkDNS.csproj.CoreCompileInputs.cache
+obj/Debug/IkDNS.csproj.FileListAbsolute.txt
+obj/Debug/IkDNS.csprojAssemblyReference.cache
+obj/Debug/IkDNS.exe
+obj/Debug/IkDNS.pdb
+bin/Debug/Configuration.ini
+bin/Debug/IkDNS.exe
+bin/Debug/IkDNS.pdb
+bin/Debug/INIFileParser.dll
+bin/Debug/INIFileParser.xml

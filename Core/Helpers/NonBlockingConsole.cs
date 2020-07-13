@@ -2,7 +2,7 @@
 using System.Threading;
 using System.Collections.Concurrent;
 
-namespace IkDNS.Core
+namespace IkDNS.Core.Helpers
 {
     public static class NonBlockingConsole
     {

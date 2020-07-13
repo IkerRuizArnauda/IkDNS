@@ -1,4 +1,6 @@
-﻿namespace IkDNS.Core.Reader
+﻿using IkDNS.Core.Reader;
+
+namespace IkDNS.Core.Resources
 {
     public class Question
     {

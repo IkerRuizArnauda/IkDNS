@@ -1,7 +1,8 @@
 ﻿using System;
+using IkDNS.Core.Reader;
 using IkDNS.Core.Helpers;
 
-namespace IkDNS.Core.Reader
+namespace IkDNS.Core.Resources
 {
     public class Header : CustomReader, IDisposable
     {

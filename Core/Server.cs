@@ -3,7 +3,8 @@ using System.Net;
 using System.Net.Sockets;
 
 using IniParser;
-using IniParser.Model;
+using IkDNS.Core.Helpers;
+using IkDNS.Core.Resources;
 
 namespace IkDNS.Core
 {

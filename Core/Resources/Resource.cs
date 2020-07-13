@@ -1,6 +1,6 @@
-﻿using System;
+﻿using IkDNS.Core.Reader;
 
-namespace IkDNS.Core.Reader
+namespace IkDNS.Core.Resources
 {
     public class Resource
     {

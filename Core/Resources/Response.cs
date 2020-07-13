@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 using IkDNS.Core.Reader;
 
-namespace IkDNS.Core
+namespace IkDNS.Core.Resources
 {
 	public class Response : IDisposable
 	{

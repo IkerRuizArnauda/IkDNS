@@ -1,4 +1,4 @@
-﻿namespace IkDNS.Core
+﻿namespace IkDNS.Core.Resources
 {
     public enum OPCode
     {

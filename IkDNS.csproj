@@ -46,12 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\Enums.cs" />
+    <Compile Include="Core\Resources\Enums.cs" />
     <Compile Include="Core\Helpers\Extensions.cs" />
-    <Compile Include="Core\NonBlockingConsole.cs" />
+    <Compile Include="Core\Helpers\NonBlockingConsole.cs" />
     <Compile Include="Core\Resources\Resource.cs" />
     <Compile Include="Core\Readers\CustomReader.cs" />
-    <Compile Include="Core\Header.cs" />
+    <Compile Include="Core\Resources\Header.cs" />
     <Compile Include="Core\Resources\Question.cs" />
     <Compile Include="Core\Readers\PersistedReader.cs" />
     <Compile Include="Core\Records\BaseRecord.cs" />
@@ -88,8 +88,8 @@
     <Compile Include="Core\Records\RUnknown.cs" />
     <Compile Include="Core\Records\RWKS.cs" />
     <Compile Include="Core\Records\RX25.cs" />
-    <Compile Include="Core\Request.cs" />
-    <Compile Include="Core\Response.cs" />
+    <Compile Include="Core\Resources\Request.cs" />
+    <Compile Include="Core\Resources\Response.cs" />
     <Compile Include="Core\Server.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
