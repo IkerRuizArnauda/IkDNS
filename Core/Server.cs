@@ -13,17 +13,17 @@ namespace IkDNS.Core
         /// <summary>
         /// This socket will listen to the client dns requests on udp 53
         /// </summary>
-        Socket LocalListener = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        readonly Socket LocalListener = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
         /// <summary>
         /// The socket will send the actual request to the real dns server
         /// </summary>
-        Socket RemoteSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
+        readonly Socket RemoteSocket = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
 
         /// <summary>
         /// Usually 12 bytes for header, 500 for payload. (On 1 question scenarios)
         /// </summary>
-        byte[] LocalBuffer = new byte[512];
+        readonly byte[] LocalBuffer = new byte[512];
 
         /// <summary>
         /// Stop flag
